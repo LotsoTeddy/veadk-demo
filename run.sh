@@ -58,3 +58,4 @@ else
     echo "USE_ADK_WEB is False, running A2A and MCP server"
     exec python3 -m uvicorn app:app --host $HOST --port $PORT --timeout-graceful-shutdown $TIMEOUT --loop asyncio
 fi
+

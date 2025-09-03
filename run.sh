@@ -40,6 +40,11 @@ else
     python3 -m pip install uvicorn[standard] fastapi
 fi
 
+python3 -c "
+from veadk.config import prepare_settings
+prepare_settings()
+"
+
 # Check if MODEL_AGENT_API_KEY is set
 if [ -z "$MODEL_AGENT_API_KEY" ]; then
     echo "MODEL_AGENT_API_KEY is not set. Please set it in your environment variables."

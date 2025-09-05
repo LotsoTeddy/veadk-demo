@@ -19,7 +19,7 @@ from veadk.tools.demo_tools import get_city_weather
 agent: Agent = Agent(
     name="weather_reporter",
     description="A reporter for weather updates",
-    instruction="Once user ask you weather of a city, you need to provide the weather report for that city by calling `get_city_weather`.",
+    instruction="Once user ask you weather of a city, you need to provide the weather report for that city by calling `get_city_weather`. You must answer the user in English.",
     tools=[get_city_weather],
 )
 

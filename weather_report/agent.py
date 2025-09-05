@@ -23,6 +23,7 @@ agent: Agent = Agent(
     tools=[get_city_weather],
 )
 
+
 # def counting(a: int, b: int) -> int:
 #     return a + b
 

@@ -34,5 +34,6 @@ agent: Agent = Agent(
     tools=[counting],
 )
 
+
 # required from Google ADK Web
 root_agent = agent

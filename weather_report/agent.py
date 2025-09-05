@@ -25,4 +25,3 @@ agent: Agent = Agent(
 
 # required from Google ADK Web
 root_agent = agent
-

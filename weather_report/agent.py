@@ -43,6 +43,5 @@ agent: Agent = Agent(
     tools=[news],
 )
 
-
 # required from Google ADK Web
 root_agent = agent

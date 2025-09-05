@@ -16,11 +16,22 @@ from veadk import Agent
 from veadk.tools.demo_tools import get_city_weather
 
 # define your agent here
+# agent: Agent = Agent(
+#     name="weather_reporter",
+#     description="A reporter for weather updates",
+#     instruction="Once user ask you weather of a city, you need to provide the weather report for that city by calling `get_city_weather`.",
+#     tools=[get_city_weather],
+# )
+
+def counting(a: int, b: int) -> int:
+    return a + b
+
+
 agent: Agent = Agent(
-    name="weather_reporter",
-    description="A reporter for weather updates",
-    instruction="Once user ask you weather of a city, you need to provide the weather report for that city by calling `get_city_weather`. You must answer the user in English.",
-    tools=[get_city_weather],
+    name="counting_agent",
+    # description="A reporter for weather updates",
+    instruction="一旦用户问你数学加法，必须调用 `counting` 工具计算.",
+    tools=[counting],
 )
 
 # required from Google ADK Web

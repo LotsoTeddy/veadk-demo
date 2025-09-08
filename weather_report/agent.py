@@ -16,23 +16,23 @@ from veadk import Agent
 from veadk.tools.demo_tools import get_city_weather
 
 # define your agent here
-# agent: Agent = Agent(
-#     name="weather_reporter",
-#     description="A reporter for weather updates",
-#     instruction="Once user ask you weather of a city, you need to provide the weather report for that city by calling `get_city_weather`.",
-#     tools=[get_city_weather],
-# )
-
-
-def counting(a: int, b: int) -> int:
-    return a + b
-
 agent: Agent = Agent(
-    name="counting_agent",
-    # description="A reporter for weather updates",
-    instruction="一旦用户问你数学加法，必须调用 `counting` 工具计算.",
-    tools=[counting],
+    name="weather_reporter",
+    description="A reporter for weather updates",
+    instruction="Once user ask you weather of a city, you need to provide the weather report for that city by calling `get_city_weather`.",
+    tools=[get_city_weather],
 )
+
+
+# def counting(a: int, b: int) -> int:
+#     return a + b
+
+# agent: Agent = Agent(
+#     name="counting_agent",
+#     # description="A reporter for weather updates",
+#     instruction="一旦用户问你数学加法，必须调用 `counting` 工具计算.",
+#     tools=[counting],
+# )
 
 # def news(query: str) -> int:
 #     return "国铁集团对儿童、残疾军人、伤残人民警察、残疾消防救援人员等旅客购票优惠措施进一步优化，动车组列车优惠（待）票价计算基础由公布票价改为执行票价，优惠下限为公布票价的4折，同时优化调整动车组列车儿童票相应席别的优惠幅度。优惠车票9月6日开始发售。"

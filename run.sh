@@ -51,6 +51,8 @@ USE_ADK_WEB=${USE_ADK_WEB:-False}
 export SHORT_TERM_MEMORY_BACKEND= # can be `mysql`
 export LONG_TERM_MEMORY_BACKEND= # can be `opensearch`
 
+
+
 if [ "$USE_ADK_WEB" = "True" ]; then
     echo "USE_ADK_WEB is True, running veadk web"
     exec python3 -m veadk.cli.cli web --host $HOST

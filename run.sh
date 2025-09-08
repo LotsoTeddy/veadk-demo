@@ -46,6 +46,8 @@ if [ -z "$MODEL_AGENT_API_KEY" ]; then
     exit 1
 fi
 
+
+
 USE_ADK_WEB=${USE_ADK_WEB:-False}
 
 export SHORT_TERM_MEMORY_BACKEND= # can be `mysql`
